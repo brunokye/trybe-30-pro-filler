@@ -10,10 +10,7 @@ def test_show_preview_empty_context(capsys):
     show_preview(context)
     captured = capsys.readouterr()
 
-    assert captured.out == (
-        f'Found {len(context["all_files"])} files '
-        f'and {len(context["all_dirs"])} directories\n'
-    )
+    assert captured.out == 'Found 0 files and 0 directories\n'
 
 
 def test_show_preview_normal_context(capsys):
@@ -32,8 +29,7 @@ def test_show_preview_normal_context(capsys):
     captured = capsys.readouterr()
 
     assert captured.out == (
-        f'Found {len(context["all_files"])} files '
-        f'and {len(context["all_dirs"])} directories\n'
+        f'Found 6 files and 6 directories\n'
         f'First 5 files: {context["all_files"][:5]}\n'
         f'First 5 directories: {context["all_dirs"][:5]}\n'
     )
