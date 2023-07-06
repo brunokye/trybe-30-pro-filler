@@ -3,8 +3,8 @@ from pro_filer.actions.main_actions import show_preview
 
 def test_show_preview_empty_context(capsys):
     context = {
-        "all_files": [],
-        "all_dirs": []
+        'all_files': [],
+        'all_dirs': []
     }
 
     show_preview(context)
@@ -15,11 +15,11 @@ def test_show_preview_empty_context(capsys):
 
 def test_show_preview_normal_context(capsys):
     context = {
-        "all_files": [
+        'all_files': [
             'file1.txt', 'file2.txt', 'file3.txt',
             'file4.txt', 'file5.txt', 'file6.txt'
         ],
-        "all_dirs": [
+        'all_dirs': [
             'dir1', 'dir2', 'dir3',
             'dir4', 'dir5', 'dir6'
         ]
