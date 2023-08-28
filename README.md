@@ -24,7 +24,7 @@ Clone o projeto
 Entre no diretório
 
 ```bash
-  cd trybe-30-pro-filler
+  cd trybe-30-pro-filler/
 ```
 
 Crie e ative ambiente virtual
